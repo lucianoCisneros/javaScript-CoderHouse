@@ -1,33 +1,26 @@
 function informacion (){
-    let info = prompt("Nos gustaria saber donde nos conociste:")
-    return alert("Gracias por tu colaboracion!")
+
+    let info = prompt("Nos gustaria saber donde nos conociste:");
+
+    return alert("Gracias por tu colaboracion!");
+    
 }
 
 informacion();
 
-//for(let i = 0; i <= 7; i++){
-    ///if(i != 7){
-        //alert('Hoy no es el dia numero 7!');
-    //} else {
-       // alert('Hoy es el dia numero 7!');
-   // }
-//}
+class turno {
 
-//function ingresarPrecio (){
-//    let precioCosto = prompt("Ingresa el costo del producto:");
- //   return precioCosto;
-//}
+    constructor(nombre, apellido, email, telefono, fecha, servicios, motivo){
+         this.nombre = nombre;
+         this.apellido = apellido;
+         this.email = email;
+         this.telefono = telefono;
+         this.fecha = fecha;
+         this.servicios = servicios;
+         this.motivo = motivo;
+    }
 
-//function sumarIva (){
- //   let iva = precioCosto * 0.21;
-//    return iva;
-//}
+    nuevo_turno = new turno (document.querySelector("input[name = 'nombre']").value, document.querySelector("input[name = 'apellido']").value, document.querySelector("input[name = 'email']").value, document.querySelector("input[name = 'telefono']").value, document.querySelector("input[name = 'fecha']").value, servicios = document.querySelector("select[name = 'servicios']").value, document.querySelector("textarea[name = 'motivo']").value);
 
-//function precioIva (){
-//    let resultado = precioCosto + iva;
- //   return alert('El precio + iva = ' + resultado);
-//}
+}
 
-//ingresarPrecio();
-//sumarIva();
-//precioIva();
