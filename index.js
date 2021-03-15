@@ -1,12 +1,16 @@
-function informacion (){
+function nombre (){
 
-    let info = prompt("Nos gustaria saber donde nos conociste:");
+    let pedir_nombre = prompt("Nos gustaria saber tu nombre:");
+    let nombre_pantalla = document.getElementById('nombre_usuario');
 
-    return alert("Gracias por tu colaboracion!");
+    nombre_pantalla.innerHTML = pedir_nombre;
     
+    return nombre_pantalla;
 }
 
-informacion();
+nombre();
+
+
 
 let turnos = [];
 
@@ -22,7 +26,7 @@ class turno {
          this.motivo = motivo;
     }
 
-    nuevo_turno = new turno (document.querySelector("input[name = 'nombre']").value, document.querySelector("input[name = 'apellido']").value, document.querySelector("input[name = 'email']").value, document.querySelector("input[name = 'telefono']").value, document.querySelector("input[name = 'fecha']").value, servicios = document.querySelector("select[name = 'servicios']").value, document.querySelector("textarea[name = 'motivo']").value);
+    nuevo_turno = new turno (document.querySelector("input[name = 'nombre']").value, document.querySelector("input[name = 'email']").value, document.querySelector("input[name = 'telefono']").value, document.querySelector("input[name = 'fecha']").value, servicios = document.querySelector("select[name = 'servicios']").value, document.querySelector("textarea[name = 'motivo']").value);
     almacenar_turno = turnos.push(this.nuevo_turno);
 
 }
