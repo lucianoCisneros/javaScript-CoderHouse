@@ -6,6 +6,7 @@ function nombre (){
     nombre_pantalla.innerHTML = pedir_nombre;
     
     return nombre_pantalla;
+
 }
 
 nombre();
@@ -29,4 +30,12 @@ class turno {
     nuevo_turno = new turno (document.querySelector("input[name = 'nombre']").value, document.querySelector("input[name = 'email']").value, document.querySelector("input[name = 'telefono']").value, document.querySelector("input[name = 'fecha']").value, servicios = document.querySelector("select[name = 'servicios']").value, document.querySelector("textarea[name = 'motivo']").value);
     almacenar_turno = turnos.push(this.nuevo_turno);
 
+}
+
+function enviar_form(evento) {
+    if (evento.keyCode == 13){
+        
+        alert('Gracias por enviar el formulario!');
+
+    }
 }
