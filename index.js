@@ -1,5 +1,4 @@
-function nombre (){
-
+$( document ).ready(function (){
     let pedir_nombre = prompt("Nos gustaria saber tu nombre:");
     let nombre_pantalla = document.getElementById('nombre_usuario');
 
@@ -7,13 +6,7 @@ function nombre (){
 
     sessionStorage.setItem('Nombre', pedir_nombre);
     
-    return nombre_pantalla;
-
-}
-
-nombre();
-
-
+})
 
 let turnos = [];
 
@@ -37,10 +30,11 @@ turnos.push(nuevo_turno);
 
 console.log(turnos);
 
-function enviar_form(evento) {
+
+$( "#motivo" ).keypress(function (evento){
     if (evento.keyCode == 13){
         
         alert('Gracias por enviar el formulario!');
 
     }
-}
+})
