@@ -4,11 +4,10 @@ $( document ).ready(function (){
 
     nombre_pantalla.innerHTML = pedir_nombre;
 
-    sessionStorage.setItem('Nombre', pedir_nombre);
+    sessionStorage.nombre = pedir_nombre;
     
 })
 
-let turnos = [];
 
 class turno {
 
@@ -26,9 +25,9 @@ class turno {
 
 nuevo_turno = new turno (document.querySelector("input[name = 'nombre']").value, document.querySelector("input[name = 'email']").value, document.querySelector("input[name = 'telefono']").value, document.querySelector("input[name = 'fecha']").value, servicios = document.querySelector("select[name = 'servicios']").value, document.querySelector("textarea[name = 'motivo']").value);
 
-turnos.push(nuevo_turno);
+turno_JSON = JSON.stringify(nuevo_turno);
 
-console.log(turnos);
+localStorage.turno = turno_JSON;
 
 
 $( "#motivo" ).keypress(function (evento){
