@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seccion de consultas del consultorio de Kinesiologia Globalite">
-    <meta name="keywords" content="Contacto, Consultas, Comentarios, Kinesiologia, Globalite">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta name="description" content="Consultorio de Kinesiologia con una gran variedad de tecnicas para todo tipos de lesiones">
+    <meta name="keywords" content="Kinesiologia, Kinesiologia Deportiva, Coberturas, Globalite">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Globalite | Turnos</title>
+    <title>Globalité | Inicio</title>
 </head>
 <body>
 
     <!--Menu-->
-    
+
     <header>
 
         <nav class="menu">
-    
+
             <div class="menu__logo__container">
                 <a href="index.html">
                     <img class="menu__logo" src="./images/logoMenu.png" alt="">
                 </a>
             </div>
-    
+
             <ul class="menu__items">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html">Servicios</a></li>
-                <li><a href="index.html">Sobre Mi</a></li>
-                <li><a href="index.html">Ubicacion</a></li>
-                <li class="active"><a href="index.html" class="active">Turnos</a></li>
+                <li class="active"><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobreMi.html">Sobre Mi</a></li>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+                <li><a href="turnos.html">Turnos</a></li>
             </ul>
 
             <span class="menu__btn">
@@ -39,46 +38,65 @@
             </span>
 
         </nav>
-
+        
     </header>
 
-    <!--Formulario-->
+    <!--Banner-->
 
-    <section>
+    <section class="banner">
 
-        <div class="formulario__container">
+        <div>
+            <h1 class="banner__titulo">Lic. Mariano Sancricca</h1>
+            <h2 class="banner__subTitulo">Kinesiologo</h2>
+        </div>
 
-            <div>
-                <h2 class="contacto__titulo">Hola <span id="nombre_usuario"></span>, no dudes en pedir tu turno<span class="contacto__punto">.</span></h2>
+    </section>
+
+    <!--Globalite-->
+
+    <section class="introduccion">
+
+        <div>
+            <h2 class="introduccion__titulo">Globalité<span class="introduccion__titulo--globalite">.</span></h2>
+            <p class="parrafos">Globalité es un centro de médico especializado en medicina y rehabilitación deportiva. Abarcamos un abanico de especialidades con el objetivo de que el paciente tenga a su disposición múltiples posibilidades para el cuidado y recuperación de su salud.</p>
+            <p class="parrafos">Desde el inicio nos diferenciamos por contar con profesionales de excelencia, comprometidos con la medicina y en capacitación permanente.</p>
+            <p class="parrafos">En nuestra sede cardiológica desarrollamos diagnósticos y tratamientos integrales con el soporte de tecnología de última generación y recursos humanos preparados para aplicarla.</p>
+            <h2 class="introduccion__titulo">Principios de Globalité<span class="introduccion__titulo--globalite">.</span></h2>
+            <p class="parrafos"><span class="introduccion__titulo--globalite">MISIÓN |</span> Mejorar la calidad de vida y salud de las personas.</p>
+            <p class="parrafos"><span class="introduccion__titulo--globalite">VISIÓN |</span> Ser la organización líder del mercado de la salud y preferida por pacientes, empleados y profesionales por la
+            calidad de atención, relaciones humanas y estándares de trabajo.</p>
+            <p class="parrafos parrafos--ultimo"><span class="introduccion__titulo--globalite">VALORES |</span> Trabajo en equipo ágil y multidisciplinario. Cumplir con nuestros compromisos. Fomentar el desarrollo personal
+            y profesional de los que integramos el equipo de trabajo. Generar vínculos de confianza y depender unos de otros.</p>
+        </div>
+
+    </section>
+
+    <!--Coberturas medicas-->
+
+    <section class="coberturas">
+
+        <div>
+
+            <div class="coberturas__titulo__container">
+                <h2 class="coberturas__titulo">Coberturas</h2>
             </div>
 
-            <form action="" method="POST">
-
-                <input type="text" name="nombre" placeholder="Nombre Completo">
-                <input type="email" name="email" placeholder="E-Mail">
-                <input type="number" name="telefono" placeholder="Telefono">
-                <input type="date" name="fecha">
-                <label class="label" for="">Servicio:</label>
-                <select name="servicios">
-                    <option value="">Kinesiologia</option>
-                    <option value="">Kinesiologia Deportiva</option>
-                </select>
-                <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Motivo" id="motivo"></textarea>
-            
-                <div class="botones__container">
-                    <button type="submit" class="botones" id="enviar">Enviar</button>
-                    <button type="reset" class="botones__reset botones">Borrar</button>
-                </div>
-            
-            </form>
+            <div class="coberturas__img__container">
+                <img class="coberturas__img" src="./images/osde.png" alt="">
+                <img class="coberturas__img" src="./images/swissMedical.png" alt="">
+                <img class="coberturas__img" src="./images/galeno.png" alt="">
+                <img class="coberturas__img" src="./images/medicus.png" alt="">
+                <img class="coberturas__img" src="./images/medife.png" alt="">
+                <img class="coberturas__img" src="./images/omint.png" alt="">
+            </div>
 
         </div>
 
     </section>
 
     <!--Footer-->
-    
-    <footer class="footer footer__contacto">
+
+    <footer class="footer footer__home">
 
         <div class="footer__borde">
 
@@ -96,16 +114,16 @@
         </div>
 
         <ul class="footer__map">
-            <li><a class="footer__map__items footer__map__items--contacto" href="index.html">Servicios</a></li>
-            <li><a class="footer__map__items footer__map__items--contacto" href="index.html">Sobre mi</a></li>
-            <li><a class="footer__map__items footer__map__items--contacto" href="index.html">Ubicacion</a></li>
-            <li><a class="footer__map__items footer__map__items--contacto" href="index.html">Contacto</a></li>
+            <li><a class="footer__map__items footer__map__items--home" href="servicios.html">Servicios</a></li>
+            <li><a class="footer__map__items footer__map__items--home" href="sobreMi.html">Sobre mi</a></li>
+            <li><a class="footer__map__items footer__map__items--home" href="ubicacion.html">Ubicacion</a></li>
+            <li><a class="footer__map__items footer__map__items--home" href="turnos.html">Turnos</a></li>
         </ul>
         
     </footer>
 
+    <script src="./javascript/navBar.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="./index.js"></script>
     
 </body>
 </html>
