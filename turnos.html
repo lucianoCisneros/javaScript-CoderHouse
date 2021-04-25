@@ -54,10 +54,19 @@
 
             <form action="" method="POST">
 
-                <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                <input type="name" name="nombre" placeholder="Nombre Completo" id="nombre" required>
                 <input type="email" name="email" placeholder="E-Mail" required>
                 <input type="number" name="telefono" placeholder="Telefono" required>
+                <label class="label">Fecha:</label>
                 <input type="date" name="fecha" min="2021-05-01" max="2022-05-01" required>
+                <label class="label">Horario:</label>
+                <select name="horario" required>
+                    <option value="8:30hs">8:30hs</option>
+                    <option value="10:00hs">10:00hs</option>
+                    <option value="14:00hs">14:00hs</option>
+                    <option value="16:00hs">16:00hs</option>
+                    <option value="17:00hs">17:00hs</option>
+                </select>
                 <label class="label" for="servicios">Servicio:</label>
                 <select name="servicios" required>
                     <option value="kinesio">Kinesiologia</option>
@@ -74,10 +83,10 @@
                     <option value="otra">Otra</option>
                     <option value="no">No tengo</option>
                 </select>
-                <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Motivo" id="motivo"></textarea>
+                <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Motivo"></textarea>
             
                 <div class="botones__container">
-                    <button type="submit" class="botones" id="enviar">Enviar</button>
+                    <input type="submit" class="botones" id="enviar" onclick="espera()"></input>
                     <button type="reset" class="botones__reset botones">Borrar</button>
                 </div>
             
@@ -116,6 +125,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <script src="./javascript/turnos.js"></script>
     
 </body>
