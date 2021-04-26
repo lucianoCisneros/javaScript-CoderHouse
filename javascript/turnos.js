@@ -2,10 +2,12 @@ $( document ).ready(function (){
 
     let pedir_nombre = prompt('Nos gustaria saber tu nombre:');
     let nombre_pantalla = document.getElementById('nombre_usuario');
-    sessionStorage.nombre = pedir_nombre;
-
-    return nombre_pantalla.innerHTML = pedir_nombre;
     
+    if(pedir_nombre.length >= 3){
+        nombre_pantalla.innerHTML = ' ' + pedir_nombre;
+        sessionStorage.nombre = pedir_nombre;
+    }
+
 })
 
 
@@ -38,7 +40,7 @@ $( '#motivo' ).keypress((evento) => {
 
     if (evento.keyCode == 13){
         
-        alertify.alert('Globalite', 'Gracias por enviar el formulario!');
+        alert('Gracias por enviar el formulario!');
 
     }
 
